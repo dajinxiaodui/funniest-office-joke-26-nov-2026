@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """The Funniest Office Joke, Judged Head to Head: writes one original
-one-line office joke to /output/entry.txt."""
+one-line office joke to /output/entry.txt. The output directory comes
+from the MAKEFUN_OUTPUT_DIR environment variable when set, and falls
+back to /output otherwise."""
 
 import os
 from pathlib import Path
 
+# The joke below is the entire entry: a single line, written verbatim.
 JOKE = "My boss said I need to be more visible at work, so now I reply-all to everything, even the email telling us to stop replying-all."
 
 
